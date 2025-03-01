@@ -35,7 +35,7 @@ jobs:
       run: mvn test -Dtest=runner.TestRunner -Dcucumber-reports.output-directory=src
       
     - name: Archive Reports
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: cucumber-reports
         path: reports
